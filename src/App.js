@@ -1,25 +1,46 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Home from './pages/Home';
+import Guide from './pages/Guide';
+import { Route, Routes, BrowserRouter as Router } from "react-router-dom"
+import BottomNavigation from "./components/BottomNavigation"
+import Textile from './pages/Textile';
+import TextileInfo from './pages/TextileInfo';
+import TextileDirection from './pages/TextitleDirection';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className="app bg-primary p-5 h-full xl:max-w-6xl xl:shadow-lg xl:mx-auto xl:p-10">
+          <Router>
+              <Routes>
+                  <Route path="/" element={<Home />} exact />
+                  <Route path="/guide" element={<Guide />} />
+                  <Route path="/textile" element={<Textile />} />
+                  <Route path="/textile-info" element={<TextileInfo />} />
+                  <Route path="/textile-direction" element={<TextileDirection />} />
+              </Routes>
+              {/* bottom navigation */}
+              <div className="bg-buttonGreen h-20 w-20 rounded-full flex justify-center  items-center mx-auto mt-10">
+                  <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-16 w-16"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="#fff"
+                  >
+                      <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M12 4v16m8-8H4"
+                      />
+                  </svg>
+              </div>{" "}
+              <p className='text-center font-semibold mt-2'>Add Item</p>
+              <hr className="my-2 bg-black " />
+              <BottomNavigation />
+          </Router>
+      </div>
   );
 }
 
-export default App;
+export default App
