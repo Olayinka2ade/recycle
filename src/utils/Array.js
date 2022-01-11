@@ -1,6 +1,9 @@
 import book from "../images/book.png"
 import globe from "../images/globe.png"
 import health from "../images/health.png"
+import pot from "../images/pot.png"
+import news from "../images/news.png"
+import item from "../images/item.png"
 
 export const items = [
     {
@@ -124,3 +127,39 @@ export const Health = [
         route: "",
     },
 ];
+
+export const emptyArray = ["", "", "", ""];
+
+export const paper = [
+    'Newspaper', 
+    "item",
+    
+]
+
+export const plastic = [
+    "Item",
+    '100g Yoghurt Pot '
+]
+
+export const glass = [
+    "item",
+    "item"
+]
+
+export const textile = [
+    "item"
+]
+
+export const metal = [
+    'item'
+]
+export const wood = [
+    'item'
+]
+export const electronics = [
+    'item'
+]
+export const food = [
+    'item'
+]
+

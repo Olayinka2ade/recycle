@@ -44,14 +44,14 @@ const Home = () => {
                 </svg>
             </div>
             {/* profile */}
-            <div className="flex justify-between text-center ">
-                <img src={Bradon} alt="profile" />
+            <div className="flex justify-between  text-center ">
+                <img src={Bradon} alt="profile" className="h-3/4 "/>
                 <div>
-                    <p className="text-2xl font-semibold mb-2">Brad Jordon</p>
-                    <p className="text-lg font-normal mb-2">
+                    <p className="text-lg font-semibold mb-2">Brad Jordon</p>
+                    <p className="text-sm font-normal mb-2">
                         Team : Flying Pigs
                     </p>
-                    <p className=" text-lg font-normal mb-2">40 Credits</p>
+                    <p className=" text-sm font-normal mb-2">40 Credits</p>
                     <div className="mb-2">
                         <PrimaryButton text="Edit Avatar" green edit />
                     </div>

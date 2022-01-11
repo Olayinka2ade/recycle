@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import pin from "../images/pin.png";
+import pin from "../images/string.png";
 import map from "../images/map3.png";
 
 const textArray = [
@@ -70,7 +70,7 @@ const TextileDirection = () => {
                 ))}
             </div>
             <div className="mt-6">
-                <img src={pin} alt="pin" className="relative top-80 left-28" />
+                <img src={pin} alt="pin" className="relative top-80  mx-auto" />
 
                 <img src={map} alt="map" />
             </div>

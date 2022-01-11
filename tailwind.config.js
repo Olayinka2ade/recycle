@@ -8,10 +8,11 @@ module.exports = {
                 secondary: "#F0EDF8",
                 iconPurple: "#6448B7",
                 guideBack: "#F8F0ED",
+                backGreen: "#EFF9EC",
             },
             spacing: {
-                test :"28rem"
-            }
+                test: "28rem",
+            },
         },
     },
     plugins: [],
