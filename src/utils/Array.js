@@ -1,9 +1,6 @@
 import book from "../images/book.png"
 import globe from "../images/globe.png"
 import health from "../images/health.png"
-import pot from "../images/pot.png"
-import news from "../images/news.png"
-import item from "../images/item.png"
 
 export const items = [
     {
