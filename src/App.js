@@ -25,22 +25,21 @@ const App = () => {
               </Routes>
               {/* bottom navigation */}
               <Link to="/add-item">
-                  <div className="bg-buttonGreen h-20 w-20 rounded-full flex justify-center  items-center mx-auto mt-10">
-                      <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          className="h-16 w-16"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="#fff"
-                      >
-                          <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth={2}
-                              d="M12 4v16m8-8H4"
-                          />
-                      </svg>
-                  </div>
+                  <div id="diamond"></div>
+                  <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-16 w-16 absolute left-40 mr-4 "
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="#fff "
+                  >
+                      <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M12 4v16m8-8H4"
+                      />
+                  </svg>
               </Link>{" "}
               <p className="text-center font-semibold mt-2">Add Item</p>
               <hr className="my-2 bg-black " />

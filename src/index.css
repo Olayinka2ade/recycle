@@ -17,3 +17,25 @@ table, thead, tr, th, td {
 ::-webkit-scrollbar {
     display: none;
 }
+
+    #diamond {
+      width: 0;
+      height: 0;
+      border: 50px solid transparent;
+      border-bottom-color: #48B764;
+      position: relative;
+      top: 30px;
+      margin: 0 auto;
+      justify-content: center;
+      align-items: center;
+    }
+    #diamond:after {
+      content: '';
+      position: absolute;
+      left: -50px;
+      top: 50px;
+      width: 0;
+      height: 0;
+      border: 50px solid transparent;
+      border-top-color: #48B764;
+    }
