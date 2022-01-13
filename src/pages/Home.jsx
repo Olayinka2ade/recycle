@@ -45,7 +45,7 @@ const Home = () => {
             </div>
             {/* profile */}
             <div className="flex justify-between  text-center ">
-                <img src={Bradon} alt="profile" className=""/>
+                <img src={Bradon} alt="profile" className=" w-1/2 xl:w-40"/>
                 <div>
                     <p className="text-lg font-semibold mb-2">Brad Jordon</p>
                     <p className="text-sm font-normal mb-2">
