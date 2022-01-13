@@ -125,7 +125,7 @@ export const Health = [
     },
 ];
 
-export const emptyArray = ["", "", "", ""];
+export const emptyArray = ["330ml Aluminium Pot", "100g Yoghurt Pot", "A4 Paper", "Newspaper"];
 
 export const paper = [
     'Newspaper', 

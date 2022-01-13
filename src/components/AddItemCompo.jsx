@@ -5,11 +5,9 @@ import itemi from "../images/item.png"
 import news from "../images/news.png"
 
 
-const AddItemCompo = ({ item, title }) => {
+const AddItemCompo = ({ item, title, show, tes, toggle }) => {
     
-    const test = () =>{
-        alert("yes")
-    }
+  
     return (
         <div>
             <div className="bg-secondary px-2 py-4 mt-4 rounded-lg">
@@ -18,14 +16,14 @@ const AddItemCompo = ({ item, title }) => {
                     <div
                         key={index}
                         className="bg-backGreen rounded-2xl  w-full h-16 my-2 px-2 flex justify-between items-center"
+                        onClick={ tes ? toggle : null}
                     >
                         <div className="flex justify-between items-center gap-2">
                             <img
-                                onClick={ title === "Plastic" ? test : null }
                                 src={
-                                    title === "Plastic"
+                                    item === "Plastic"
                                         ? pot
-                                        : title === "Paper/cardboard"
+                                        : item === "Paper/cardboard"
                                         ? news
                                         : itemi
                                 }
