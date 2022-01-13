@@ -28,7 +28,7 @@ const App = () => {
                   <div id="diamond"></div>
                   <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="h-16 w-16 absolute left-40 mr-4 "
+                      className="h-16 w-16 absolute  mr-4 " style={{left:"9.8rem"}}
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="#fff "
