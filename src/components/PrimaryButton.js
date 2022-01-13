@@ -5,8 +5,8 @@ const PrimaryButton = ({ text, edit, add,  green}) => {
         <div
             className={
                 green
-                    ? " bg-buttonGreen rounded-full py-2   flex gap-2 justify-center items-center text-white  px-1 "
-                    : "rounded-full py-2  px-1 bg-white flex justify-center border-2 border-black items-center text-black"
+                    ? " bg-buttonGreen rounded-full py-2   flex gap-2 justify-center items-center text-white  px-2 "
+                    : "rounded-full py-2  px-2 bg-white flex justify-center border-2 border-black items-center text-black"
             }
         >
             {edit && (
