@@ -3,18 +3,18 @@ import { Link } from 'react-router-dom';
 import AddItemCompo from '../components/AddItemCompo';
 import { emptyArray, paper, plastic, glass, metal, textile, wood, electronics, food } from '../utils/Array';
 import PrimaryButton from '../components/PrimaryButton';
-import pot from "../images/pot.png";
-import itemi from "../images/item.png";
+import pot from "../images/potLove.png";
+import itemi from "../images/itemLove.png";
 
-import bottle from "../images/bottle.png";
-import paperImg from "../images/paper.png";
+import bottle from "../images/bottleLove.png";
+import paperImg from "../images/paperLove.png";
 
-const AddItem = () => {
-    const [show, setShow] = useState(false)
+const AddItem = ({ toggleThumbs, thumbs, bin }) => {
+    const [show, setShow] = useState(false);
 
-    const toggle = () =>{
-        setShow(true)
-    }
+    const toggle = () => {
+        setShow(true);
+    };
     return (
         <div>
             <div className="flex justify-between mb-10">
@@ -106,28 +106,46 @@ const AddItem = () => {
                         key={index}
                         className="bg-backGreen rounded-2xl  w-full h-16 my-2 px-2 flex justify-between items-center"
                     >
-                        {show && <> <div className="flex justify-between items-center gap-2">
-                            <img
-                                src={
-                                    item === "330ml Aluminium Pot"
-                                        ? bottle
-                                        : item === "100g Yoghurt Pot"
-                                        ? pot : item === "A4 Paper" ? paperImg
-                                        : itemi
-                                }
-                                alt="item-img"
-                            />
+                        {show && (
+                            <>
+                                {" "}
+                                <div className="flex justify-between items-center gap-2">
+                                    <img
+                                        src={
+                                            item === "330ml Aluminium Pot"
+                                                ? bottle
+                                                : item === "100g Yoghurt Pot"
+                                                ? pot
+                                                : item === "A4 Paper"
+                                                ? paperImg
+                                                : itemi
+                                        }
+                                        alt="item-img"
+                                    />
 
-                            <p className="font-semibold text-xs">{item}</p>
-                        </div>
-                        <PrimaryButton green text="Add" add /></>}
+                                    <p className="font-semibold text-xs">
+                                        {item}
+                                    </p>
+                                </div>
+                                <PrimaryButton green text="Add" add />
+                            </>
+                        )}
                     </div>
                 ))}
             </div>
             <div className="bg-secondary px-2 py-4 mt-4 rounded-lg">
                 <p className="font-semibold text-lg mb-6 text-center">Items</p>
                 <AddItemCompo item={paper} title="Paper/cardboard" />
-                <AddItemCompo item={plastic} title="Plastic" show={show} toggle={toggle} tes/>
+                <AddItemCompo
+                    item={plastic}
+                    title="Plastic"
+                    show={show}
+                    toggle={toggle}
+                    tes
+                    thumbs={thumbs}
+                    toggleThumbs={toggleThumbs}
+                    bin={bin}
+                />
                 <AddItemCompo item={glass} title="Glass" />
                 <AddItemCompo item={metal} title="Metal" />
                 <AddItemCompo item={textile} title="Textile" />
@@ -137,6 +155,6 @@ const AddItem = () => {
             </div>
         </div>
     );
-}
+};
 
 export default AddItem

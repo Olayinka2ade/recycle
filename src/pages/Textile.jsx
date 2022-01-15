@@ -62,7 +62,7 @@ const Textile = () => {
                         className={
                             active === index
                                 ? " border-2 border-black rounded-lg px-2 py-2"
-                                : " border-2 border-grey-400 text-gray-400 rounded-lg px-2 py-2 "
+                                : " border-2  text-gray-400 rounded-lg px-2 py-2 "
                         }
                         onClick={() => setActive(index)}
                     >
@@ -70,7 +70,7 @@ const Textile = () => {
                     </div>
                 ))}
             </div>
-            <div className="mt-6">
+            <div className="">
                 <Link to='/textile-info'>
                     <img
                         src={pin}

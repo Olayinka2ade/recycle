@@ -129,13 +129,13 @@ export const emptyArray = ["330ml Aluminium Pot", "100g Yoghurt Pot", "A4 Paper"
 
 export const paper = [
     'Newspaper', 
-    "item",
+    "Item ",
     
 ]
 
 export const plastic = [
-    "Item",
-    '100g Yoghurt Pot '
+    "Item ",
+    '100g Yoghurt Pot'
 ]
 
 export const glass = [

@@ -69,10 +69,10 @@ const TextileDirection = () => {
                     </div>
                 ))}
             </div>
-            <div className="mt-6">
+            <div className="w-full" >
                 <img src={pin} alt="pin" className="relative top-80  mx-auto" />
 
-                <img src={map} alt="map" />
+                <img src={map} alt="map" className="h-full" />
             </div>
           
         </div>

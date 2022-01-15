@@ -1,11 +1,12 @@
 import React from "react";
 import PrimaryButton from "../components/PrimaryButton";
 import Bradon from "../images/bradon.png";
+import binimg from "../images/bin.png";
 import trophy from "../images/trophy.png";
 import check from "../images/check.png";
 import cross from "../images/cross.png";
 
-const Home = () => {
+const Home = ({ bin}) => {
     const trophies = [
         {
             id: 1,
@@ -45,7 +46,15 @@ const Home = () => {
             </div>
             {/* profile */}
             <div className="flex justify-between  text-center ">
-                <img src={Bradon} alt="profile" className=" w-1/2 xl:w-40"/>
+                <img src={Bradon} alt="profile" className=" sm:w-1/2 xl:w-40" />
+                {bin && (
+                    <img
+                        src={binimg}
+                        alt="profile"
+                        className=" h-20 absolute mt-24"
+                    />
+                 )} 
+
                 <div>
                     <p className="text-lg font-semibold mb-2">Brad Jordon</p>
                     <p className="text-sm font-normal mb-2">
@@ -145,9 +154,6 @@ const Home = () => {
                     </tbody>
                 </table>
             </div>
-
-          
-          
         </div>
     );
 };
