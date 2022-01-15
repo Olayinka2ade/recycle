@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import Home from './pages/Home';
 import Guide from './pages/Guide';
-import { Route, Routes, useNavigate, BrowserRouter as Router, Link } from "react-router-dom"
+import { Route, Routes,  BrowserRouter as Router, Link } from "react-router-dom"
 import BottomNavigation from "./components/BottomNavigation"
 import Textile from './pages/Textile';
 import TextileInfo from './pages/TextileInfo';
