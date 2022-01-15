@@ -46,7 +46,7 @@ const Home = ({ bin}) => {
             </div>
             {/* profile */}
             <div className="flex justify-between  text-center ">
-                <img src={Bradon} alt="profile" className=" sm:w-1/2 xl:w-40" />
+                <img src={Bradon} alt="profile" className=" w-1/2 xl:w-40" />
                 {bin && (
                     <img
                         src={binimg}
