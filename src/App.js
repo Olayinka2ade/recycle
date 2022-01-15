@@ -8,6 +8,7 @@ import TextileInfo from './pages/TextileInfo';
 import TextileDirection from './pages/TextitleDirection';
 import AddItem from './pages/AddItem';
 import Thumbs from './components/Thumbs'
+import button from './images/button.png'
 
 const App = () => {
     const [thumbs, setThumbs] = useState(false)
@@ -30,7 +31,11 @@ const App = () => {
       <div className="app bg-primary p-5 h-full xl:max-w-6xl xl:shadow-lg xl:mx-auto xl:p-10">
           <Router>
               <Routes>
-                  <Route path="/" element={<Home thumbs={thumbs} bin={bin}/>} exact />
+                  <Route
+                      path="/"
+                      element={<Home thumbs={thumbs} bin={bin} />}
+                      exact
+                  />
                   <Route path="/guide" element={<Guide />} />
                   <Route path="/textile" element={<Textile />} />
                   <Route path="/textile-info" element={<TextileInfo />} />
@@ -52,24 +57,10 @@ const App = () => {
               {/* bottom navigation */}
               {thumbs && <Thumbs />}
               <Link to="/add-item">
-                  <div id="diamond"></div>
-                  <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-16 w-16 absolute  mr-4 "
-                      style={{ left: "11rem" }}
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="#fff "
-                  >
-                      <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M12 4v16m8-8H4"
-                      />
-                  </svg>
+                  <div className=''>
+                      <img src={button} className='mx-auto relative top-10' alt="button" />
+                  </div>
               </Link>{" "}
-              <p className="text-center font-semibold mt-2">Add Item</p>
               <hr className="my-2 bg-black " />
               <BottomNavigation />
           </Router>
